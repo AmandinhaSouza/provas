@@ -1,0 +1,109 @@
+<html> _ _        
+ < cabeça >
+     < meta  charset =" UTF-8 " >
+     < meta  name =" viewport " content =" largura=largura do dispositivo, escala inicial=1 " >
+     < título > LOGIN </ título >
+      <estilo> _ _
+	     @import  url ( 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,500&display=swap' );
+		  
+		* {
+		  margem :  0 ;
+		  borda :  0 ;
+		  preenchimento : 0 ;
+		  tamanho da caixa : caixa de borda;
+		  font-family :  "Poppins" , sem serifa;
+		}
+		
+		corpo {
+		  cor de fundo :  # 4B0082 ;
+		}
+		
+		formulário {
+		  cor de fundo : branco;
+		  largura máxima :  500 px ;
+		  largura :  70 % ;
+		  preenchimento :  20 px ;
+		  posição : absoluto;
+		  esquerda :  50 % ;
+		  superior :  40 % ;
+		  transformar :  traduzir ( -50 % ,  -50 % );
+		  raio da borda :  10 px ;
+		}
+		
+		forma  h3 {
+		  alinhamento de texto : centro;
+		  cor :  # 4B0082 ;
+		}
+		
+		 entrada de formulário [ tipo = texto ] ,  entrada de formulário  [ tipo = senha ]{
+		  largura :  100 % ;
+		  altura :  45px ; _
+		  borda :  1 px sólido # ccc ;
+		  padding-left : 10 px ;
+		  margem :  10 px  0 ;
+		}
+		entrada [ tipo = enviar ]{
+		  largura : 35 % ;
+		  altura :  45px ; _
+		  preenchimento :  20 px ;
+		  posição : relativa;
+		  esquerda :  50 % ;
+		  superior :  70 % ;
+		  transformar :  traduzir ( -50 % ,  -50 % );
+		  cursor : ponteiro;
+		  fundo : branco;
+		  cor :  # 4B0082 ;
+		  borda :  0 ;
+		  raio da borda :  10 px ;
+		  transição :  0 , 5 s ;
+		  box-shadow :  2 px  2 px  50 px  # 000 ;
+                  alinhar : centralizar;
+		  
+		}
+		
+
+		entrada [ tipo = enviar ] : passe o mouse {
+		  cor de fundo : # 9400D3 ;
+		  
+		 }
+	    
+      </estilo> _ _
+      
+ </ cabeça >
+  < corpo >
+      
+      < formulário >
+	     < h3 > Entrar </ h3 >
+		 < input  type =" text " name =" texto " placeholder =" nome de usuário... " id =" log "/>
+		 < input  type =" password " name =" senha " placeholder =" sua senha... " id =" senha "/>
+	  </forma> _ _
+	  < input  type =" submit " value =" Entrar " onclick =" entrar() "/>
+	  <script> _ _
+		  
+		  const  usuarioColocado  =  document . getElementById ( "log" )
+	   const  senhaColocada  =  document . getElementById ( "senha" )
+	      
+		  função  entrar ( ) {
+	      
+		     const  usuario1  =  'rayssa'
+		     const  usuario2  =  'amanda'
+                     const  usuario3  =  'israel'
+                     const  senha1  =  '12345'
+		     const  senha2  =  '12345'
+		     const  senha3  =  '123456'
+
+			    if ( usuarioColocado . value  ===  usuario1  &&  senhaColocada . value  ===  senha1 ) {
+			        janela . localização  =  "./cadastro.html" ;
+        }
+			    if ( usuarioColocado . value  ===  usuario2  &&  senhaColocada . value  ===  senha2 ) {
+			        janela . localização  =  "./cadastro.html" ;
+			    }
+                            if ( usuarioColocado . value  ===  usuario3  &&  senhaColocada . value  ===  senha3 ) {
+			        janela . localização  =  "./cadastro.html" ;
+          }
+	  	}		      
+	      
+	  </ script > 
+  </ corpo >
+
+ </html> _ _
